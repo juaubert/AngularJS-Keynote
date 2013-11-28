@@ -1,0 +1,6 @@
+Directives :
+    Float validators
+    
+ng-repeat : notification
+
+Mocks : $httpBackend
