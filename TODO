@@ -1,6 +1,12 @@
-Directives :
-    Float validators
-    
-ng-repeat : notification
+1: Parsing
+    {{1 + 1}}
 
-Mocks : $httpBackend
+2: Binding
+    Saisie dans input + affichage dans span
+    
+3: Directives (ngRepeat)
+    ngRepeat + orderBy
+    
+4: Advance binding
+    $resource
+    addEmployee
