@@ -1,17 +1,53 @@
 <!DOCTYPE html>
-<html ng-app="testApp">
+<html ng-app="angularApp">
 
-  <head>
-    <meta charset="utf-8" />
-    <title>AngularJS Test App</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="http://code.angularjs.org/1.2.2/angular.js"></script>
-    <script src="app.js"></script>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <title>AngularJS Test App</title>
+        <link rel="stylesheet" href="style/style.css" />
+        <script src="vendor/angular.min.js"></script>
+        <script src="vendor/angular-resource.min.js"></script>
+        <script src="script/service.js"></script>
+        <script src="script/app.js"></script>
+    </head>
 
-  <body ng-controller="MainCtrl">
-      <input type="text" ng-model="name" placeholder="Enter your name"/>
-      <p>Hello {{name}}!</p>
-  </body>
-
+    <body ng-controller="MainCtrl">
+        <div class="container">
+            <h2>1: Parsing (Sans et Avec ng-app)</h2>
+            {{2 + 2}}
+            
+            <h2>2: Binding</h2>
+            <input type="text" ng-model="name" placeholder="Enter what you want"> --> {{name}}
+            
+            <h2>3: Directives (ngRepeat)</h2>
+            <h4>Employees</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th><a href="" ng-click="predicate = 'name'; reverse=!reverse">Name</a></th>
+                        <th><a href="" ng-click="predicate = 'skills'; reverse=!reverse">Skills</a></th>
+                        <th><a href="" ng-click="predicate = 'salary'; reverse=!reverse">Salary</a></th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr ng-repeat="employee in employees | orderBy:predicate:reverse">
+                        <td>{{$index}}</td>
+                        <td><input type="text" ng-model="employee.name"/></td>
+                        <td><input type="text" ng-model="employee.skills"/></td>
+                        <td><input type="text" ng-model="employee.salary"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>4: Advance binding</h2>
+            <input type="text" ng-model="form.name" placeholder="Name"/>
+            <input type="text" ng-model="form.skills" placeholder="Skills"/>
+            <input type="text" ng-model="form.salary" placeholder="Salary"/>
+            <button ng-click="addEmployee()">Add</button>
+            
+        </div>
+    </body>
+    
 </html>

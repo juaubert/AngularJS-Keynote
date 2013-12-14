@@ -1,0 +1,12 @@
+[
+    {"name":"Fabien", "skills":"Speech", "salary":100000},
+    {"name":"Julien", "skills":"AngularJS", "salary":50000},
+    {"name":"Mohamed", "skills":"SVN", "salary":50000},
+    {"name":"Lionel", "skills":"UMA", "salary":50000},
+    {"name":"Marc", "skills":"TOIP", "salary":50000},
+    {"name":"Clément", "skills":"BDoc", "salary":50000},
+    {"name":"Fabrice", "skills":"VPE", "salary":50000},
+    {"name":"Antoine", "skills":"CodeWars", "salary":50000},
+    {"name":"Jonathan", "skills":"SVN", "salary":50000},
+    {"name":"Grégory", "skills":"Désimb", "salary":50000}
+]
