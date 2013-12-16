@@ -1,0 +1,20 @@
+<input type="search" ng-model="query" placeholder="Filter..." />
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th><a href="" ng-click="predicate='name';reverse=!reverse">Name</a></th>
+            <th><a href="" ng-click="predicate='skills';reverse=!reverse">Skills</a></th>
+            <th><a href="" ng-click="predicate='salary';reverse=!reverse">Salary</a></th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr ng-repeat="employee in employees | filter:query | orderBy:predicate:reverse">
+            <td>{{$index}}</td>
+            <td><input type="text" ng-model="employee.name"/></td>
+            <td><input type="text" ng-model="employee.skills"/></td>
+            <td><input type="text" ng-model="employee.salary"/></td>
+        </tr>
+    </tbody>
+</table>

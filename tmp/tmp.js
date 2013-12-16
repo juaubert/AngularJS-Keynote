@@ -2,10 +2,7 @@
 
 var app = angular.module('angularApp', ['employeeService']);
 
-/* Controller */
 app.controller('MainCtrl', function ($scope, employeeService) {
-    
-    var employees = [];
     
     employeeService.getEmployees(function (data) {
         $scope.employees = data;
@@ -18,21 +15,9 @@ app.controller('MainCtrl', function ($scope, employeeService) {
             salary: $scope.form.salary
         });
     };
+    
 });
 
-
-
-/* Directive */
-app.directive('employeeArray', function() {
-    return {
-        restrict: 'E',
-        templateUrl: 'template.html'
-    };
-});
-
-
-
-/* Service */
 angular.module('employeeService', ['ngResource'])
     .service('employeeService', function ($resource) {
         return $resource('/data/employees.json', {}, {
