@@ -1,33 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="angularApp">
-
+<html>
     <head>
-        <meta charset="utf-8" />
-        <title>AngularJS Test App</title>
-        <script src="vendor/angular.min.js"></script>
-        <script src="vendor/angular-resource.min.js"></script>
-        <script src="script/app.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="AngularJS Demo App">
+        <meta name="viewport" content="width=device-width">
+        
+        <title>AngularJS Demo App</title>
+        
+        <link href="style/main.css" rel="stylesheet">
     </head>
-
-    <body ng-controller="MainCtrl">
-        <div class="container">
-            <h2>1: Parsing (Sans et Avec ng-app)</h2>
-            {{1 + 1}}
-            
-            <h2>2: Binding</h2>
-            <input type="text" ng-model="something" placeholder="Enter what you want"> --> {{something}}
-            
-            <h2>3: Directives (ngRepeat)</h2>
-            <h4>Employees</h4>
-            <employee-array></employee-array>
-            
-            <h2>4: Advance binding</h2>
-            <input type="text" ng-model="form.name" placeholder="Name"/>
-            <input type="text" ng-model="form.skills" placeholder="Skills"/>
-            <input type="text" ng-model="form.salary" placeholder="Salary"/>
-            <button ng-click="addEmployee()">Add</button>
-            
-        </div>
-    </body>
     
+    <body>
+        
+    </body>
 </html>
+

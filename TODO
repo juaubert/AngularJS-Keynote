@@ -1,12 +1,21 @@
-1: Parsing
+1: Parsing (Sans et Avec ng-app)
     {{1 + 1}}
 
 2: Binding
-    Saisie dans input + affichage dans span
+    Saisie dans input + affichage du modèle associé
+    <input type="text" placeholder="Enter something..." ng-model="something" /> --> {{something}}
     
-3: Directives (ngRepeat)
-    ngRepeat + orderBy
+3: Ctrl
+    - Création du MainCtrl (don't forget angularApp !!!)
+    Chargement d'un tableau simple.
+    ngRepeat
     
-4: Advance binding
-    $resource
-    addEmployee
+4: Service
+    $resource: Chargement de employees.json
+    
+5: Advance binding
+    filter, orderBy
+    add/remove Employee
+    
+6: Directives custom
+    - employeeTable

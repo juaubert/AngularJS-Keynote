@@ -1,12 +1,12 @@
 [
-    {"name":"Fabien", "skills":"Speech", "salary":100000},
-    {"name":"Julien", "skills":"AngularJS", "salary":50000},
-    {"name":"Mohamed", "skills":"SVN", "salary":50000},
-    {"name":"Lionel", "skills":"UMA", "salary":50000},
-    {"name":"Marc", "skills":"TOIP", "salary":50000},
-    {"name":"Clément", "skills":"BDoc", "salary":50000},
-    {"name":"Fabrice", "skills":"VPE", "salary":50000},
-    {"name":"Antoine", "skills":"CodeWars", "salary":50000},
-    {"name":"Jonathan", "skills":"SVN", "salary":50000},
-    {"name":"Grégory", "skills":"Désimb", "salary":50000}
+    {"name":"Fabien", "skills":"Speech", "salary":"N/C"},
+    {"name":"Julien", "skills":"AngularJS", "salary":"Pas assez"},
+    {"name":"Mohamed", "skills":"SVN", "salary":"Un peu trop"},
+    {"name":"Lionel", "skills":"UMA", "salary":"Bénéfices UMA"},
+    {"name":"Marc", "skills":"TOIP", "salary":"Juste ce qu'il faut"},
+    {"name":"Clément", "skills":"BDoc", "salary":"Pas assez"},
+    {"name":"Fabrice", "skills":"VPE", "salary":"19689501 FrancsCFA"},
+    {"name":"Antoine", "skills":"CodeWars", "salary":"5 Mo"},
+    {"name":"Jonathan", "skills":"Stagiaire", "salary":"Beaucoup trop"},
+    {"name":"Grégory", "skills":"Désimbrication", "salary":"4991583.72 Pesetas"}
 ]
