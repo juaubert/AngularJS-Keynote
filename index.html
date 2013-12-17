@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="angularApp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,10 +9,22 @@
         <title>AngularJS Demo App</title>
         
         <link href="style/main.css" rel="stylesheet">
+        <script src="vendor/angular.min.js"></script>
+        <script src="vendor/angular-resource.min.js"></script>
+        <script src="script/app.js"></script>
     </head>
     
-    <body>
+    <body ng-controller="MainCtrl">
         
+        <input type="search" ng-model="query" placeholder="Filter..." />
+        <employee-table></employee-table>
+        
+        <form>
+            <input type="text" ng-model="form.name" />
+            <input type="text" ng-model="form.skills" />
+            <input type="text" ng-model="form.salary" />
+            <button type="submit" ng-click="addEmployee()">Add</button>
+        </form>
     </body>
 </html>
 
